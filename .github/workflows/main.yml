@@ -19,4 +19,4 @@ jobs:
       - name: GraphQL Inspector
         uses: kamilkisiela/graphql-inspector@master
         with:
-          schema: '${{ github.event.pull_request.base.ref }}:schema.graphql'
+          schema: '${{ steps.branch-name.outputs.base_ref_branch }}:schema.graphql'
