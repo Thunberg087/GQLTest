@@ -27,7 +27,7 @@ async function startApolloServer(typeDefs, resolvers) {
 
 const users = [
   {
-    name: 'The Awakening',
+    name: 'The Awakeninag',
   },
   {
     name: 'City of Glass',
