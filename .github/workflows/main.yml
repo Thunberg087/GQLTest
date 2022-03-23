@@ -15,4 +15,4 @@ jobs:
       - name: GraphQL Inspector
         uses: kamilkisiela/graphql-inspector@v3.1.1
         with:
-          schema: './schema.graphql'
+          schema: 'main:schema.graphql'
