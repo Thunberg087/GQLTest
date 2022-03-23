@@ -12,7 +12,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3.0.0
 
+      - name: Get branch names
+        id: branch-name
+        uses: tj-actions/branch-names@v4.9
+
       - name: GraphQL Inspector
         uses: kamilkisiela/graphql-inspector@master
         with:
-          schema: '${{ github.head_ref }}:schema.graphql'
+          schema: '${{ steps.branch-name.outputs.current_branch }}:schema.graphql'
