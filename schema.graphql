@@ -1,5 +1,5 @@
 type User {
-  name: String
+  name: String!
 }
 
 type Query {
